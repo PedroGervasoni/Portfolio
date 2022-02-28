@@ -1,0 +1,72 @@
+#sobre-mi {
+    background-color: aquamarine;
+  }
+  .skills{
+    display: flex;
+  }
+  .skills__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills__bar,
+  .skills__bar::after {
+    position: relative;
+    width: 175px;
+    height: 8px;
+    background-color: #888;
+    border-radius: $border-radius;
+    overflow: hidden;
+  }
+  
+  .skills__bar::after {
+    content: '';
+    position: absolute;
+    left: -175px;
+    background-color: $primary-color;
+    transition: $transition;
+    animation: skill-bar 2s forwards ease-in-out;
+  }
+  
+  .skills__bar--10::after{
+    --skill-bar-length:10%
+  
+  }
+  .skills__bar--20::after{
+    --skill-bar-length:20%
+  
+  }
+  .skills__bar--30::after{
+    --skill-bar-length:30%
+  
+  }
+  .skills__bar--40::after{
+    --skill-bar-length:40%
+  
+  }
+  .skills__bar--50::after{
+    --skill-bar-length:50%
+  
+  }
+  .skills__bar--60::after{
+    --skill-bar-length:60%
+  
+  }
+  .skills__bar--70::after{
+    --skill-bar-length:70%
+  
+  }
+  .skills__bar--80::after{
+    --skill-bar-length:80%
+  
+  }
+  .skills__bar--90::after{
+    --skill-bar-length:90%
+  
+  }
+  
+  @keyframes skill-bar {
+    to {
+      transform: translateX(var(--skill-bar-length));
+    }
+  }

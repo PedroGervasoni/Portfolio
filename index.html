@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>
+        Pedro Gervasoni
+    </title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- <meta name="keywords"
+        content="terranova eventos, terranova, bodas, casamientos, cumpleaños de 15, graduaciones, rosario, salon, salones de eventos"> -->
+    <!-- <meta name="description" content="Terranova Eventos, donde los eventos soñados se hacen realidad."> -->
+    <meta name="autor" content="Pedro Gervasoni">
+    <meta name="copyright" content="Pedro Gervasoni">
+    <meta name="robots" content="idex">
+    <!-- <meta name="theme-color" content="#606848" /> -->
+    <!-- <link rel="icon" href="../imagenes/iconos/terranova.ico"> -->
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- uniicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#pedro-gervasoni">Pedro Gervasoni</a>
+            <a href="#sobre-mi">Sobre Mi</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i id="burger" class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+
+
+    <section id="pedro-gervasoni" class="secciones">
+        <h1>Creative</h1>
+        <p>developer</p>
+        <p>websites</p>
+    </section>
+
+
+    <section id="sobre-mi" class="secciones">
+        <h2>I am a web developer in development</h2>
+        <p>my name is Pedro, i am a constantly growing web developer</p>
+
+        <div class="skills">
+            <div class="skills__item">
+                <p class="skills__tech">HTML</p>
+                <div class="skills__bar skills__bar--60"></div>
+            </div>
+            <div class="skills__item">
+                <p class="skills__tech">CSS</p>
+                <div class="skills__bar skills__bar--60"></div>
+            </div>
+            <div class="skills__item">
+                <p class="skills__tech">SASS</p>
+                <div class="skills__bar skills__bar--10"></div>
+            </div>
+            <div class="skills__item">
+                <p class="skills__tech">JS</p>
+                <div class="skills__bar skills__bar--10"></div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="proyectos" class="secciones">
+        <h2>proyectos</h2>
+    </section>
+
+
+    <section id="contacto" class="secciones">
+        <h2>contacto</h2>
+    </section>
+
+
+    <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+        btnScrollToTop.addEventListener("click", function () {
+
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            })
+        });
+    </script>
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
+</body>
+
+</html>
