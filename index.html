@@ -41,17 +41,27 @@
 </head>
 
 <body>
-    <header>
-        <div class="topnav" id="myTopnav">
-            <a href="#pedro-gervasoni">Pedro Gervasoni</a>
-            <a href="#sobre-mi">Sobre Mi</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i id="burger" class="fa fa-bars"></i>
-            </a>
-        </div>
-    </header>
+    
+
+    <header class="header">
+        <nav class="nav">
+          <a href="#pedro-gervasoni" class="logo nav-link">Pedro Gervasoni</a>
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="uil uil-align-center-alt"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="#sobre-mi" class="nav-menu-link nav-link">Sobre Mi</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#proyectos" class="nav-menu-link nav-link">Proyectos</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
 
 
@@ -59,6 +69,7 @@
         <h1>Creative</h1>
         <p>developer</p>
         <p>websites</p>
+        <img src="" alt="">
     </section>
 
 
@@ -90,11 +101,33 @@
 
     <section id="proyectos" class="secciones">
         <h2>proyectos</h2>
+
     </section>
 
 
     <section id="contacto" class="secciones">
-        <h2>contacto</h2>
+        <h2>Contact with me</h2>
+        <ul>
+            <li><a href="mailto:pedrogervasoni17@gmail.com"><i class="uil uil-envelope"></i>
+                    <p>pedrogervasoni17@gmail.com</p>
+                </a> 
+            </li>
+            <li><a href="tel:+5493413923240"><i class="uil uil-phone"></i>
+                    <p>+54 9 3413923240</p>
+                </a> 
+            </li>
+            <li><a href="https://goo.gl/maps/SPodrXhYDJHD6hdY7" target="_blank"><i class="uil uil-map-pin-alt"></i>
+                    <p>Argentina, Santa Fe, Rosario.</p>
+                </a> 
+            </li>
+        </ul>
+
+        <form action="">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+        </form>
+
     </section>
 
 
@@ -122,6 +155,20 @@
 
 
     <script>
+        const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
+
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("nav-menu_visible");
+
+  if (navMenu.classList.contains("nav-menu_visible")) {
+    navToggle.setAttribute("aria-label", "Cerrar menú");
+  } else {
+    navToggle.setAttribute("aria-label", "Abrir menú");
+  }
+});
+
+
         const btnScrollToTop = document.querySelector("#btnScrollToTop");
 
         btnScrollToTop.addEventListener("click", function () {
@@ -136,16 +183,7 @@
 
 
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    
     <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
 </body>
 
