@@ -1,3 +1,42 @@
 /* #contacto {
     background-color: blue;
   } */
+
+  .title_container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .title_contact{
+    margin-top: 110px;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+.contact_ul_container{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.contact_li{
+  display: flex;
+  padding: 30px;
+}
+
+.icon_contact{
+  width: 36px;
+}
+
+.uil uil-phone{
+  width: 100px;
+}
+
+.li_contact{
+  display: flex;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+}

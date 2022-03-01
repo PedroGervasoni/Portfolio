@@ -41,27 +41,27 @@
 </head>
 
 <body>
-    
+
 
     <header class="header">
         <nav class="nav">
-          <a href="#pedro-gervasoni" class="logo nav-link">Pedro Gervasoni</a>
-          <button class="nav-toggle" aria-label="Abrir menú">
-            <i class="uil uil-align-center-alt"></i>
-          </button>
-          <ul class="nav-menu">
-            <li class="nav-menu-item">
-              <a href="#sobre-mi" class="nav-menu-link nav-link">Sobre Mi</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="#proyectos" class="nav-menu-link nav-link">Proyectos</a>
-            </li>
-            <li class="nav-menu-item">
-              <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
-            </li>
-          </ul>
+            <a href="#pedro-gervasoni" class="logo nav-link">Pedro Gervasoni</a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="uil uil-align-center-alt"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="#sobre-mi" class="nav-menu-link nav-link">Sobre Mi</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#proyectos" class="nav-menu-link nav-link">Proyectos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
+                </li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
 
 
@@ -106,20 +106,40 @@
 
 
     <section id="contacto" class="secciones">
-        <h2>Contact with me</h2>
-        <ul>
-            <li><a href="mailto:pedrogervasoni17@gmail.com"><i class="uil uil-envelope"></i>
-                    <p>pedrogervasoni17@gmail.com</p>
-                </a> 
-            </li>
-            <li><a href="tel:+5493413923240"><i class="uil uil-phone"></i>
-                    <p>+54 9 3413923240</p>
-                </a> 
-            </li>
-            <li><a href="https://goo.gl/maps/SPodrXhYDJHD6hdY7" target="_blank"><i class="uil uil-map-pin-alt"></i>
-                    <p>Argentina, Santa Fe, Rosario.</p>
-                </a> 
-            </li>
+        <div class="title_container">
+            <h2 class="title_contact">Contact with me</h2>
+        </div>
+        <ul class="contact_ul_container">
+            <div class="contact_li">
+                <li class="li_contact">
+                    <div class="icon_contact">
+                    <i class="uil uil-envelope"></i>
+                </div>
+                    <a href="mailto:pedrogervasoni17@gmail.com">
+                        <p>pedrogervasoni17@gmail.com</p>
+                    </a>
+                </li>
+            </div>
+            <div class="contact_li">
+                <li class="li_contact">
+                    <div class="icon_contact">
+                    <i class="uil uil-phone"></i>
+                </div>
+                    <a href="tel:+5493413923240">
+                        <p>+54 9 3413923240</p>
+                    </a>
+                </li>
+            </div>
+            <div class="contact_li">
+                <li class="li_contact">
+                    <div class="icon_contact">
+                    <i class="uil uil-map-pin-alt"></i>
+                </div>
+                    <a href="https://goo.gl/maps/SPodrXhYDJHD6hdY7" target="_blank">
+                        <p>Argentina, Santa Fe, Rosario.</p>
+                    </a>
+                </li>
+            </div>
         </ul>
 
         <form action="">
@@ -156,17 +176,17 @@
 
     <script>
         const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
+        const navMenu = document.querySelector(".nav-menu");
 
-navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("nav-menu_visible");
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("nav-menu_visible");
 
-  if (navMenu.classList.contains("nav-menu_visible")) {
-    navToggle.setAttribute("aria-label", "Cerrar menú");
-  } else {
-    navToggle.setAttribute("aria-label", "Abrir menú");
-  }
-});
+            if (navMenu.classList.contains("nav-menu_visible")) {
+                navToggle.setAttribute("aria-label", "Cerrar menú");
+            } else {
+                navToggle.setAttribute("aria-label", "Abrir menú");
+            }
+        });
 
 
         const btnScrollToTop = document.querySelector("#btnScrollToTop");
@@ -183,7 +203,7 @@ navToggle.addEventListener("click", () => {
 
 
 
-    
+
     <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
 </body>
 

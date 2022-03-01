@@ -15,9 +15,10 @@
     color: $text-color
     
   }
-   body{
+   body, html{
     background-image: url(/images/background/background.svg);
     background-size:  100%;
+    scroll-behavior: smooth;
   }
   
   /* scrollbar */
@@ -99,7 +100,7 @@
   
   .logo {
     font-size: 22px;
-    font-weight: 200;
+    font-weight: 400;
     padding: 0 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -126,8 +127,8 @@
   
   .nav-menu-link:hover,
   .nav-menu-link_active {
-    color: #034574;
-    transition: 0.5s;
+    color: #36D0FF;
+    transition: 1s;
   }
   
   /* TOGGLE */
