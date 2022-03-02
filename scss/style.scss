@@ -26,7 +26,7 @@
   
   /* scrollbar */
   body::-webkit-scrollbar {
-    width: 0.7rem;
+    width: 0.5rem;
   }
   
   body::-webkit-scrollbar-track {
@@ -34,12 +34,13 @@
   }
   
   body::-webkit-scrollbar-thumb {
-    background: $primary-color;
+    background: $headings-color;
     border-radius: $border-radius;
   }
   
   body::-webkit-scrollbar-thumb:hover {
     background: $primary-color;
+    animation-duration: 1s;
   }
   
   #burger {
@@ -224,17 +225,19 @@
     position: fixed;
     right: 10px;
     bottom: 10px;
-    width: 50px;
-    height: 50px;
+    /* width: 50px;
+    height: 50px; */
     border-radius: 50%;
-    background: red;
-    box-shadow: 0 0 10px black;
-    color: #ddd;
+    background: none;
+    color: $text-color;
     border: none;
     outline: none;
-    cursor: pointer;
+    cursor: pointer; 
   }
-  
+  .icon_up{
+    width: 70px;
+    color: $text-color;
+  }
   #btnScrollToTop:active{
-    background: #606848;
+    background: none
   }

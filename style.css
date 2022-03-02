@@ -174,17 +174,25 @@
 /* .input_{
   padding: 5px;
 } */
+::placeholder {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 #email {
   padding: 5px;
   width: 340px;
   border-radius: 0.4em;
   border: none;
+  background-color: #919191;
 }
 
 #name {
   padding: 5px;
   width: 340px;
   border-radius: 0.4em;
+  background-color: #919191;
   border: none;
 }
 
@@ -193,6 +201,7 @@
   padding: 5px;
   width: 340px;
   border-radius: 0.4em;
+  background-color: #919191;
   border: none;
 }
 
@@ -216,7 +225,7 @@ body, html {
 
 /* scrollbar */
 body::-webkit-scrollbar {
-  width: 0.7rem;
+  width: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -224,12 +233,13 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #00A0D0;
+  background: #919191;
   border-radius: 0.4em;
 }
 
 body::-webkit-scrollbar-thumb:hover {
   background: #00A0D0;
+  animation-duration: 1s;
 }
 
 #burger {
@@ -391,19 +401,23 @@ body::-webkit-scrollbar-thumb:hover {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   border-radius: 50%;
-  background: red;
-  box-shadow: 0 0 10px black;
-  color: #ddd;
+  background: none;
+  color: #ffff;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
+.icon_up {
+  width: 70px;
+  color: #ffff;
+}
+
 #btnScrollToTop:active {
-  background: #606848;
+  background: none;
 }
 
 /*# sourceMappingURL=style.css.map */

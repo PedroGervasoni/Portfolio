@@ -97,17 +97,27 @@ border-radius: $border-radius;
 /* .input_{
   padding: 5px;
 } */
+::placeholder { 
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+ }
+  
 #email{
   padding: 5px;
   width: 340px;
   border-radius: $border-radius;
-  border: none
+  border: none;
+  background-color: $headings-color;
+  
 }
 #name{
+  
   padding: 5px;
   width: 340px;
   border-radius: $border-radius;
-  border: none
+  background-color: $headings-color;
+  border: none;
 }
 
 #message{
@@ -115,5 +125,6 @@ border-radius: $border-radius;
   padding: 5px;
   width: 340px;
   border-radius: $border-radius;
-  border: none
+  background-color: $headings-color;
+  border: none;
 }
