@@ -10,15 +10,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none !important;
     font-family: 'Manrope', sans-serif;
     color: $text-color
     
   }
    body, html{
     background-image: url(/images/background/background.svg);
-    background-size:  100%;
+    /* background-size:  100%; */
     scroll-behavior: smooth;
+    background-attachment: fixed, scroll;
+    background-size: cover;
+    background-color: none !important;
   }
   
   /* scrollbar */

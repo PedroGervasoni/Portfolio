@@ -87,8 +87,9 @@
 }
 
 .title_contact {
-  margin-top: 110px;
-  font-size: 26px;
+  margin-top: 250px;
+  font-size: 30px;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -97,41 +98,120 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+  margin: 0;
+  background: #00394A;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 0.4em;
 }
 
 .contact_li {
   display: flex;
-  padding: 30px;
 }
 
+/* .tel_margin{
+  margin: 80px 0;
+}
+ */
 .icon_contact {
-  width: 36px;
+  padding-right: 10px;
 }
 
-.uil uil-phone {
-  width: 100px;
+.uil {
+  font-size: 2rem;
+  color: #00A0D0;
 }
 
 .li_contact {
   display: flex;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 300;
   letter-spacing: 1px;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0 20px;
+}
+.li_contact p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .li_contact {
+    margin: 0;
+  }
+
+  .contact_ul_container {
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-radius: none;
+  }
+}
+.container_general_contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 50px;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input_name {
+  margin: 20px 0;
+}
+
+/* .input_{
+  padding: 5px;
+} */
+#email {
+  padding: 5px;
+  width: 340px;
+  border-radius: 0.4em;
+  border: none;
+}
+
+#name {
+  padding: 5px;
+  width: 340px;
+  border-radius: 0.4em;
+  border: none;
+}
+
+#message {
+  margin: 0;
+  padding: 5px;
+  width: 340px;
+  border-radius: 0.4em;
+  border: none;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: "Manrope", sans-serif;
   color: #ffff;
 }
 
 body, html {
   background-image: url(/images/background/background.svg);
-  background-size: 100%;
+  /* background-size:  100%; */
   scroll-behavior: smooth;
+  background-attachment: fixed, scroll;
+  background-size: cover;
+  background-color: none !important;
 }
 
 /* scrollbar */
