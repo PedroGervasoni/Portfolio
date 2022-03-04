@@ -3,6 +3,10 @@
   }
 
  */
+.img_home {
+  width: 500px;
+}
+
 /* #sobre-mi {
     background-color: aquamarine;
   } */
@@ -331,7 +335,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 700;
   padding: 0 40px;
   letter-spacing: 5px;
@@ -342,6 +346,10 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   margin-right: 40px;
   list-style: none;
+}
+
+.uit {
+  color: #9DE03F;
 }
 
 .nav-menu-item {
@@ -382,9 +390,9 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .logo {
-    font-size: 22px;
-    font-weight: 400;
-    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 16px;
     text-transform: uppercase;
   }
 
@@ -468,7 +476,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-indent: -9999999px;
   }
 }
-@media screen and (max-width: 1880px) {
+@media screen and (min-width: 804px) and (max-width: 1880px) {
   #message {
     margin-bottom: 180px;
   }
@@ -477,7 +485,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 180px;
   }
 }
-@media screen and (width: 804px) {
+@media screen and (max-width: 804px) {
   #message {
     margin-bottom: 90px;
   }

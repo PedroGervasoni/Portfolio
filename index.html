@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
     <!-- google icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+
 
 
 
@@ -51,7 +51,7 @@
         <nav class="nav">
             <a href="#pedro-gervasoni" class="logo nav-link">Pedro Gervasoni</a>
             <button class="nav-toggle" aria-label="Abrir menú">
-                <i class="uil uil-align-center-alt"></i>
+                <i class="uit uit-align-center-alt"></i>
             </button>
             <ul class="nav-menu">
                 <li class="nav-menu-item">
@@ -70,10 +70,20 @@
 
 
     <section id="pedro-gervasoni" class="secciones container">
-        <h1>Creative</h1>
-        <p>developer</p>
-        <p>websites</p>
-        <img src="" alt="">
+        <div class="container_general_home">
+            <div class="container_title_home">
+                <h1 class="title_home">Creative</h1>
+            </div>
+            <div class="container_text_home">
+                <p class="text_home">developer</p>
+            </div>
+            <div class="container_span_home">
+                <span class="span_home">websites</span>
+            </div>
+            <div class="container_img_home">
+                <img class="img_home" src="" alt="pedro-gervasoni"> 
+            </div>
+        </div>
     </section>
 
 
@@ -183,7 +193,7 @@
 
 
 
-    
+
 
 
 
@@ -199,13 +209,13 @@
 
             if (navMenu.classList.contains("nav-menu_visible")) {
                 navToggle.setAttribute("aria-label", "Cerrar menú");
-                document.body.style.overflowY="hidden";
+                document.body.style.overflowY = "hidden";
 
             } else {
                 navToggle.setAttribute("aria-label", "Abrir menú");
-                document.body.style.overflowY="scroll";
+                document.body.style.overflowY = "scroll";
 
-                
+
             }
         });
 
@@ -222,9 +232,9 @@
         });
     </script>
 
-<script src="/js/particles.min.js"></script>
-<script src="/js/particlesjs-config.json"></script>
-    
+    <script src="/js/particles.min.js"></script>
+    <script src="/js/particlesjs-config.json"></script>
+
 </body>
 
 </html>
