@@ -278,10 +278,42 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 
+@media screen and (max-width: 550px) {
+  
+  #btnScrollToTop{
+    margin-bottom: -50px;
+  }
+  
+  .text_up {
+    
+      text-indent: -9999999px;
+  
+
+  }
+ 
+}
 
 
 
 
+
+@media screen and (max-width: 1880px){
+  #message{
+    margin-bottom: 180px;
+  }
+
+  .contact_ul_container{
+    margin-bottom: 180px;
+  }
+}
+
+
+@media screen and (width: 804px){
+
+#message{
+  margin-bottom: 90px;
+}
+}
 
 
 
