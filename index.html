@@ -18,11 +18,11 @@
     <meta name="robots" content="idex">
     <!-- <meta name="theme-color" content="#606848" /> -->
     <!-- <link rel="icon" href="../imagenes/iconos/terranova.ico"> -->
-   
-   
-        <!-- boostrap -->
-        <!-- <link rel="stylesheet" href="./assets/boostrap/bootstrap.min.css"> -->
-         <!-- css -->
+
+
+    <!-- boostrap -->
+    <!-- <link rel="stylesheet" href="./assets/boostrap/bootstrap.min.css"> -->
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
     <!-- fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,6 +45,7 @@
 
 <body>
 
+    <div id="particles-js" class="particulas"></div>
 
     <header class="header container">
         <nav class="nav">
@@ -151,11 +152,12 @@
                     <div class="input_">
                         <input type="email" name="email" id="email" placeholder="Email">
                     </div>
-                    <div class="input_name" >
+                    <div class="input_name">
                         <input class="input_style" type="text" name="name" id="name" placeholder="Name">
                     </div>
-                    <div class="input_" >
-                        <textarea class="input_style" name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                    <div class="input_">
+                        <textarea class="input_style" name="message" id="message" placeholder="Message" cols="30"
+                            rows="10"></textarea>
                     </div>
                 </div>
         </div>
@@ -165,7 +167,8 @@
 
 
     <button id="btnScrollToTop">
-           <img class="icon_up" src="./images/icons/up.png" alt="">
+        <i class="uil uil-arrow-up"></i>
+        <span class="text_up">Scroll Up</span>
     </button>
 
 
@@ -196,8 +199,13 @@
 
             if (navMenu.classList.contains("nav-menu_visible")) {
                 navToggle.setAttribute("aria-label", "Cerrar menú");
+                document.body.style.overflowY="hidden";
+
             } else {
                 navToggle.setAttribute("aria-label", "Abrir menú");
+                document.body.style.overflowY="scroll";
+
+                
             }
         });
 
@@ -214,10 +222,9 @@
         });
     </script>
 
-
-
-
-    <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
+<script src="/js/particles.min.js"></script>
+<script src="/js/particlesjs-config.json"></script>
+    
 </body>
 
 </html>
