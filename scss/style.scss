@@ -66,37 +66,6 @@ body::-webkit-scrollbar-thumb:hover {
   color: #ddd;
 }
 
-/* .header{
-    height: 100px;
-  } */
-/* .topnav {
-    display: flex;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0);
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 30px;
-    .nav_link{
-      font-size: 22px;
-      float: left;
-      display: block;
-      color: $text-color;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-weight: 200;
-      letter-spacing: 3px;
-      &:hover{
-       color:#DDF7FF;
-
-      }
-    }
-  } */
-
-
-
 .header {
   background-color: #0769e900;
 
@@ -125,11 +94,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .logo {
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
   font-weight: 700;
   padding: 0 40px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   text-transform: uppercase;
+  gap: 10px;
 }
 
 .nav-menu {

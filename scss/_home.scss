@@ -4,6 +4,34 @@
 
  */
 
- .img_home{
-   width: 500px;
- }
+.container_general_home{
+  display: flex;
+  flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+.title_home{
+  color: $text-color;
+  text-align: center;
+  font-size: 50px;
+    letter-spacing: 1px;
+}
+
+
+.text_home{
+  color: $text-color;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.span_home{
+  color: $text-color;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
