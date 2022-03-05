@@ -13,6 +13,7 @@
 
 
 .title_home{
+  margin-top: 200px;
   color: $text-color;
   text-align: center;
   font-size: 50px;
@@ -34,4 +35,22 @@
   font-size: 28px;
   letter-spacing: 1px;
   font-weight: 100;
+}
+
+
+.container_button{
+ padding: 20px;
+}
+.button_resume{
+  color: $color-negro-fondo;
+  background-color:$headings-color;
+  color: $color-negro-fondo;
+  padding: 6px 14px;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  &:hover {
+    background-color:$primary-color;
+  }
 }

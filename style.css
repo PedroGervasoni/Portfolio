@@ -11,6 +11,7 @@
 }
 
 .title_home {
+  margin-top: 200px;
   color: #F3EFF5;
   text-align: center;
   font-size: 50px;
@@ -31,6 +32,23 @@
   font-size: 28px;
   letter-spacing: 1px;
   font-weight: 100;
+}
+
+.container_button {
+  padding: 20px;
+}
+
+.button_resume {
+  color: #0A0A0A;
+  background-color: #5C6070;
+  color: #0A0A0A;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 0.4em;
+  cursor: pointer;
+}
+.button_resume:hover {
+  background-color: #93DD2C;
 }
 
 /* #sobre-mi {
