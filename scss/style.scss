@@ -152,7 +152,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 
   .header {
-    height: 60px;
+    z-index: 999;
+    height: 80px;
+    background-color: #0e0e0e;
+    position: sticky;
   }
 
   .logo {
@@ -168,7 +171,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0;
     background-color: $color-negro-fondo;
     position: fixed;
-    top: 60px;
+    top: 80px;
     width: 100%;
     padding: 20px 0;
     height: calc(100% - 60px);
@@ -185,7 +188,7 @@ body::-webkit-scrollbar-thumb:hover {
 
   .nav-menu-link:hover {
     background: none;
-    color: #83c5f7;
+    color: $color-lima-claro;
   }
 
   .nav-toggle {
@@ -207,12 +210,28 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 .secciones {
+  display: flex;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+#pedro-gervasoni{
+  height: calc(100vh - 80px);
+}
+#sobre-mi{
+  height:100vh;
+}
 
+#proyectos{
+  height:100vh;
+}
 
+#contacto{
+  padding-top: 80px;
+}
 
 
 

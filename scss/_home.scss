@@ -9,11 +9,11 @@
   flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    gap: 10px;
 }
 
 
 .title_home{
-  margin-top: 200px;
   color: $text-color;
   text-align: center;
   font-size: 50px;
@@ -42,15 +42,18 @@
  padding: 20px;
 }
 .button_resume{
+  background-color:$color-lima-claro;
   color: $color-negro-fondo;
-  background-color:$headings-color;
-  color: $color-negro-fondo;
-  padding: 6px 14px;
-  border: none;
+  padding: 7px 18px;
+  border: 1px solid $color-lima-claro;
   border-radius: $border-radius;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
 
   &:hover {
-    background-color:$primary-color;
+    border: 1px solid $color-lima-claro;
+    background-color:transparent;
+    color: $color-lima-claro;
   }
 }

@@ -8,10 +8,10 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  gap: 10px;
 }
 
 .title_home {
-  margin-top: 200px;
   color: #F3EFF5;
   text-align: center;
   font-size: 50px;
@@ -39,16 +39,19 @@
 }
 
 .button_resume {
+  background-color: #9DE03F;
   color: #0A0A0A;
-  background-color: #5C6070;
-  color: #0A0A0A;
-  padding: 6px 14px;
-  border: none;
+  padding: 7px 18px;
+  border: 1px solid #9DE03F;
   border-radius: 0.4em;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
 }
 .button_resume:hover {
-  background-color: #93DD2C;
+  border: 1px solid #9DE03F;
+  background-color: transparent;
+  color: #9DE03F;
 }
 
 /* #sobre-mi {
@@ -147,7 +150,6 @@
 }
 
 .title_contact {
-  margin-top: 250px;
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -220,6 +222,13 @@
   margin-top: 50px;
 }
 
+.form_container {
+  padding: 5px;
+  flex-grow: 999;
+  text-align: center;
+  display: flex;
+}
+
 .input_container {
   display: flex;
   flex-direction: column;
@@ -240,32 +249,14 @@
   font-weight: 400;
 }
 
-#email {
+#email, #name, #message {
   padding: 8px;
-  width: 340px;
+  max-width: 383px;
   border-radius: 0.4em;
   border: none;
   background-color: #5C6070;
   color: #F3EFF5;
-}
-
-#name {
-  padding: 8px;
-  width: 340px;
-  border-radius: 0.4em;
-  background-color: #5C6070;
-  border: none;
-  color: #F3EFF5;
-}
-
-#message {
-  margin: 0;
-  padding: 8px;
-  width: 340px;
-  border-radius: 0.4em;
-  background-color: #5C6070;
-  border: none;
-  color: #F3EFF5;
+  width: 100%;
 }
 
 * {
@@ -405,7 +396,10 @@ body::-webkit-scrollbar-thumb:hover {
 /* MOBILE */
 @media (max-width: 1024px) {
   .header {
-    height: 60px;
+    z-index: 999;
+    height: 80px;
+    background-color: #0e0e0e;
+    position: sticky;
   }
 
   .logo {
@@ -421,7 +415,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0;
     background-color: #0A0A0A;
     position: fixed;
-    top: 60px;
+    top: 80px;
     width: 100%;
     padding: 20px 0;
     height: calc(100% - 60px);
@@ -437,7 +431,7 @@ body::-webkit-scrollbar-thumb:hover {
 
   .nav-menu-link:hover {
     background: none;
-    color: #83c5f7;
+    color: #9DE03F;
   }
 
   .nav-toggle {
@@ -453,8 +447,28 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 .secciones {
+  display: flex;
   width: 100%;
+  /* height: 100vh; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#pedro-gervasoni {
+  height: calc(100vh - 80px);
+}
+
+#sobre-mi {
   height: 100vh;
+}
+
+#proyectos {
+  height: 100vh;
+}
+
+#contacto {
+  padding-top: 80px;
 }
 
 #btnScrollToTop {

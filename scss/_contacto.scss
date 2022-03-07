@@ -22,7 +22,7 @@
 
 
 .title_contact {
-  margin-top: 250px;
+ 
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -100,7 +100,13 @@
   margin-top: 50px;
 
 }
+.form_container{
+  padding: 5px;
+  flex-grow: 999;
+  text-align: center;
+  display: flex;
 
+}
 .input_container {
   display: flex;
   flex-direction: column;
@@ -121,32 +127,14 @@
   font-weight: 400;
 }
 
-#email {
+#email, #name, #message {
   padding: 8px;
-  width: 340px;
+  max-width: 383px;
   border-radius: $border-radius;
   border: none;
   background-color: $headings-color;
   color:$text-color;
-
+  width: 100%;
 }
 
-#name {
 
-  padding: 8px;
-  width: 340px;
-  border-radius: $border-radius;
-  background-color: $headings-color;
-  border: none;
-  color:$text-color;
-}
-
-#message {
-  margin: 0;
-  padding: 8px;
-  width: 340px;
-  border-radius: $border-radius;
-  background-color: $headings-color;
-  border: none;
-  color:$text-color;
-}

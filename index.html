@@ -49,7 +49,7 @@
 
     <header class="header container">
         <nav class="nav">
-            <a href="#pedro-gervasoni" class="logo nav-link">
+            <a href="#"  class="logo nav-link">
                 <img src="./images/logos/Logo-blanco.svg" width="40px" alt="">
             </a>
             <button class="nav-toggle" aria-label="Abrir menú">
@@ -57,13 +57,13 @@
             </button>
             <ul class="nav-menu">
                 <li class="nav-menu-item">
-                    <a href="#sobre-mi" class="nav-menu-link nav-link">Sobre Mi</a>
+                    <a href="#sobre-mi" class="nav-menu-link nav-link">About Me</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#proyectos" class="nav-menu-link nav-link">Proyectos</a>
+                    <a href="#proyectos" class="nav-menu-link nav-link">Projects</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
+                    <a href="#contacto" class="nav-menu-link nav-link">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -87,7 +87,7 @@
                     Resume
                 </button>
             </div>
-            
+
         </div>
     </section>
 
@@ -162,15 +162,15 @@
                 </div>
             </ul>
 
-            <form>
+            <form class="form_container">
                 <div class="input_container ">
-                    <div class="input_ aaaa">
+                    <div class="input_ ">
                         <input type="email" name="email" id="email" placeholder="Email">
                     </div>
-                    <div class="input_name aaa">
+                    <div class="input_name ">
                         <input class="input_style" type="text" name="name" id="name" placeholder="Name">
                     </div>
-                    <div class="input_ aaa">
+                    <div class="input_ ">
                         <textarea class="input_style" name="message" id="message" placeholder="Message" cols="30"
                             rows="10"></textarea>
                     </div>
@@ -208,6 +208,8 @@
     <script>
         const navToggle = document.querySelector(".nav-toggle");
         const navMenu = document.querySelector(".nav-menu");
+        const navMenuItem = document.querySelectorAll(".nav-menu-link");
+
 
         navToggle.addEventListener("click", () => {
             navMenu.classList.toggle("nav-menu_visible");
@@ -215,15 +217,24 @@
             if (navMenu.classList.contains("nav-menu_visible")) {
                 navToggle.setAttribute("aria-label", "Cerrar menú");
                 document.body.style.overflowY = "hidden";
-
             } else {
                 navToggle.setAttribute("aria-label", "Abrir menú");
                 document.body.style.overflowY = "scroll";
-
-
             }
         });
 
+        navMenuItem.forEach((item) => {
+            item.addEventListener("click", () => {
+                navMenu.classList.toggle("nav-menu_visible");
+                if (navMenu.classList.contains("nav-menu_visible")) {
+                    navToggle.setAttribute("aria-label", "Cerrar menú");
+                    document.body.style.overflowY = "hidden";
+                } else {
+                    navToggle.setAttribute("aria-label", "Abrir menú");
+                    document.body.style.overflowY = "scroll";
+                }
+            })
+        })
 
         const btnScrollToTop = document.querySelector("#btnScrollToTop");
 
