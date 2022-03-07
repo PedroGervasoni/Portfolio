@@ -49,7 +49,7 @@
 
     <header class="header container">
         <nav class="nav">
-            <a href="#"  class="logo nav-link">
+            <a href="#" class="logo nav-link">
                 <img src="./images/logos/Logo-blanco.svg" width="40px" alt="">
             </a>
             <button class="nav-toggle" aria-label="Abrir menú">
@@ -93,8 +93,17 @@
 
 
     <section id="sobre-mi" class="secciones container">
-        <h2>I am a web developer in development</h2>
-        <p>my name is Pedro, i am a constantly growing web developer</p>
+        <div class="container_sobre-mi">
+            <div class="linea-sobre-mi"> 
+            <h2 class="sobre-mi">About Me</h2>
+            </div>
+            <div class="container_title_sobre-mi">
+                <h3 class="title_sobre-mi">Web developer in process</h3>
+            </div>
+            <div class="container_text_sobre-mi">
+                <p class="text_sobre-mi">my name is Pedro, i am a constantly growing web developer</p>
+            </div>
+        </div>
 
         <div class="skills">
             <div class="skills__item">
@@ -228,7 +237,7 @@
                 navMenu.classList.toggle("nav-menu_visible");
                 if (navMenu.classList.contains("nav-menu_visible")) {
                     navToggle.setAttribute("aria-label", "Cerrar menú");
-                    document.body.style.overflowY = "hidden";
+                    
                 } else {
                     navToggle.setAttribute("aria-label", "Abrir menú");
                     document.body.style.overflowY = "scroll";
