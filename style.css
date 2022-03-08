@@ -509,7 +509,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #contacto {
-  padding-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 250px;
+  height: 100%;
 }
 
 #btnScrollToTop {
@@ -550,19 +552,28 @@ body::-webkit-scrollbar-thumb:hover {
     text-indent: -9999999px;
   }
 }
-@media screen and (min-width: 804px) and (max-width: 1880px) {
-  #message {
+/* 
+@media screen and (min-width:804px) and (max-width: 1880px){
+  #message{
     margin-bottom: 180px;
   }
 
-  .contact_ul_container {
+  .contact_ul_container{
     margin-bottom: 180px;
   }
+
 }
-@media screen and (max-width: 804px) {
-  #message {
-    margin-bottom: 90px;
-  }
+
+
+@media screen and (max-width: 804px){
+
+#message{
+  margin-bottom: 90px;
 }
+}
+
+
+
+ */
 
 /*# sourceMappingURL=style.css.map */
