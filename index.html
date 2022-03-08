@@ -94,8 +94,8 @@
 
     <section id="sobre-mi" class="secciones container">
         <div class="container_sobre-mi">
-            <div class="linea-sobre-mi"> 
-            <h2 class="sobre-mi">About Me</h2>
+            <div class="linea-sobre-mi">
+                <h2 class="sobre-mi">About Me</h2>
             </div>
             <div class="container_title_sobre-mi">
                 <h3 class="title_sobre-mi">Web developer in process</h3>
@@ -139,53 +139,38 @@
         </div>
         <div class="container_general_contact">
             <ul class="contact_ul_container">
-                <div class="contact_li">
-                    <li class="li_contact">
-                        <div class="icon_contact">
-                            <i class="uil uil-envelope-add"></i>
-                        </div>
-                        <a href="mailto:pedrogervasoni17@gmail.com">
-                            <p>pedrogervasoni17@gmail.com</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="contact_li tel_margin">
-                    <li class="li_contact">
-                        <div class="icon_contact">
-                            <i class="uil uil-phone"></i>
-                        </div>
-                        <a href="tel:+5493413923240">
-                            <p>+54 9 3413923240</p>
-                        </a>
-                    </li>
-                </div>
-                <div class="contact_li">
-                    <li class="li_contact">
-                        <div class="icon_contact">
-                            <i class="uil uil-map-pin-alt"></i>
-                        </div>
-                        <a href="https://goo.gl/maps/SPodrXhYDJHD6hdY7" target="_blank">
-                            <p>Argentina, Santa Fe, Rosario.</p>
-                        </a>
-                    </li>
-                </div>
+                <li class="li_contact">
+                    <div class="icon_contact">
+                        <i class="uil uil-envelope-add"></i>
+                    </div>
+                    <a href="mailto:pedrogervasoni17@gmail.com">
+                        <p>pedrogervasoni17@gmail.com</p>
+                    </a>
+                </li>
+                <li class="li_contact">
+                    <div class="icon_contact">
+                        <i class="uil uil-phone"></i>
+                    </div>
+                    <a href="tel:+5493413923240">
+                        <p>+54 9 3413923240</p>
+                    </a>
+                </li>
+                <li class="li_contact">
+                    <div class="icon_contact">
+                        <i class="uil uil-map-pin-alt"></i>
+                    </div>
+                    <a href="https://goo.gl/maps/SPodrXhYDJHD6hdY7" target="_blank" rel="noopener">
+                        <p>Argentina, Santa Fe, Rosario.</p>
+                    </a>
+                </li>
             </ul>
 
             <form class="form_container">
-                <div class="input_container ">
-                    <div class="input_ ">
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                    <div class="input_name ">
-                        <input class="input_style" type="text" name="name" id="name" placeholder="Name">
-                    </div>
-                    <div class="input_ ">
-                        <textarea class="input_style" name="message" id="message" placeholder="Message" cols="30"
-                            rows="10"></textarea>
-                    </div>
-                </div>
-        </div>
-        </form>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input class="input_style" type="text" name="name" id="name" placeholder="Name">
+                    <textarea class="input_style" name="message" id="message" placeholder="Message" cols="30"
+                        rows="10"></textarea>
+            </form>
 
     </section>
 
@@ -237,7 +222,7 @@
                 navMenu.classList.toggle("nav-menu_visible");
                 if (navMenu.classList.contains("nav-menu_visible")) {
                     navToggle.setAttribute("aria-label", "Cerrar menú");
-                    
+
                 } else {
                     navToggle.setAttribute("aria-label", "Abrir menú");
                     document.body.style.overflowY = "scroll";

@@ -20,9 +20,7 @@
   }
 }
 
-
 .title_contact {
- 
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
@@ -36,12 +34,23 @@
   justify-content: center;
   padding: 0px;
   margin: 0;
-  background: #1C1D21;
+  background: #1c1d21;
   border-radius: $border-radius;
 }
 
-.contact_li {
+.li_contact {
   display: flex;
+  font-weight: 300;
+  letter-spacing: 1px;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0 20px;
+
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
 }
 
 /* .tel_margin{
@@ -54,30 +63,12 @@
 
 .uil {
   font-size: 2rem;
-  color: #93DD2C;
-}
-
-.li_contact {
-  display: flex;
-  /* font-size: 18px; */
-  font-weight: 300;
-  letter-spacing: 1px;
-  align-items: center;
-  padding: 20px 0;
-  margin: 0 20px;
-
-  p {
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0;
-  }
-
+  color: #93dd2c;
 }
 
 @media screen and (max-width: 400px) {
   .li_contact {
     margin: 0;
-
   }
 
   .contact_ul_container {
@@ -90,29 +81,25 @@
 
 .container_general_contact {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 5rem;
+  width: 100%;
+  max-width: calc(766px + 3rem);
   margin-top: 50px;
-
+  flex-wrap: wrap;
 }
-.form_container{
-  padding: 5px;
-  flex-grow: 999;
-  text-align: center;
-  display: flex;
-
-}
-.input_container {
+.form_container {
+  padding: 10px;
+  width: 100%;
+  max-width: 383px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
 .input_name {
-  margin: 20px 0
+  margin: 20px 0;
 }
 
 /* .input_{
@@ -124,14 +111,12 @@
   font-weight: 400;
 }
 
-#email, #name, #message {
+#email,
+#name,
+#message {
   padding: 8px;
-  max-width: 383px;
   border-radius: $border-radius;
   border: none;
   background-color: $headings-color;
-  color:$text-color;
-  width: 100%;
+  color: $text-color;
 }
-
-
