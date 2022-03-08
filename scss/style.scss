@@ -108,6 +108,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   margin-right: 40px;
   list-style: none;
+  align-items: center;
 }
 .uit{
   color: $color-lima-claro;
@@ -119,6 +120,9 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 80px;
   text-transform: uppercase;
   width: max-content;
+  &:nth-child(4){
+    width: 65px;
+  }
 }
 
 .nav-menu-link {
