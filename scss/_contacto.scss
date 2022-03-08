@@ -77,6 +77,9 @@
     -webkit-backdrop-filter: none;
     border-radius: none;
   }
+  .form_container{
+    padding: 5px;
+  }
 }
 
 .container_general_contact {
@@ -86,9 +89,9 @@
   max-width: calc(766px + 3rem);
   margin-top: 50px;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 .form_container {
-  padding: 10px;
   width: 100%;
   max-width: 383px;
   display: flex;
