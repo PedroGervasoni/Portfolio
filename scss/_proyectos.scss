@@ -1,3 +1,37 @@
-/* #proyectos {
-    background-color: brown;
-  } */
+
+  .container_proyectos{
+    display: flex;
+    flex-direction: column;
+      flex-wrap: nowrap;
+      text-align: center;
+  }
+  .linea-proyectos{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -11px;
+      background: $color-lima-claro;
+      width: 220px;
+      height: 3px;
+      transform: translate(-50%);
+    }
+  }
+  .proyectos{
+   
+    font-size: 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+  }
+
+  .parrafo-proyectos{
+    font-size: 22px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
