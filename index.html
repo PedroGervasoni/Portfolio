@@ -58,17 +58,19 @@
             </button>
             <ul class="nav-menu">
                 <li class="nav-menu-item">
-                    <a href="#sobre-mi" class="nav-menu-link nav-link">About Me</a>
+                    <a href="#sobre-mi" data-section="navbar" id="sobre-mi" class="nav-menu-link nav-link">About
+                        Me</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#proyectos" class="nav-menu-link nav-link">Projects</a>
+                    <a href="#proyectos" data-section="navbar" id="proyectos"
+                        class="nav-menu-link nav-link">Projects</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#contacto" class="nav-menu-link nav-link">Contact</a>
+                    <a href="#contacto" data-section="navbar" id="contacto" class="nav-menu-link nav-link">Contact</a>
                 </li>
                 <li class="nav-menu-item">
                     <div class="can-toggle demo-rebrand-2 ">
-                        <input id="e" type="checkbox">
+                        <input class="check" id="e" type="checkbox">
                         <label for="e">
                             <div class="can-toggle__switch" data-checked="ES" data-unchecked="EN"></div>
                         </label>
@@ -85,73 +87,78 @@
     <section id="pedro-gervasoni" class="secciones container">
         <div class="container_general_home">
             <div class="container_title_home">
-                <h1 class="title_home">I am Pedro Gervasoni</h1>
+                <h1 data-section="home" id="title-home" class="title_home">I am Pedro Gervasoni</h1>
             </div>
             <div class="container_text_home">
-                <p class="text_home">Future full stack developer</p>
+                <p data-section="home" id="text-home" class="text_home">Future full stack developer</p>
             </div>
             <div class="container_span_home">
-                <span class="span_home">I invite you to meet me...</span>
+                <span data-section="home" id="span-home" class="span_home">I invite you to meet me...</span>
             </div>
             <div class="container_button">
-                <button class="button_resume" type="button">
+                <button data-section="home" id="boton-resume" class="button_resume" type="button">
                     Resume
                 </button>
+                <div class="container_button_2">
+                    <button data-section="home" id="boton-contacto" class="button_resume" type="button">
+                        Contact me
+                    </button>
+                </div>
             </div>
 
         </div>
     </section>
-
-
     <section id="sobre-mi" class="secciones container">
         <div class="container_sobre-mi">
             <div class="linea-sobre-mi">
-                <h2 class="sobre-mi">About Me</h2>
+                <h2 data-section="sobre-mi" id="sobreMi" class="sobre-mi">About Me</h2>
             </div>
             <div class="container_title_sobre-mi">
-                <h3 class="title_sobre-mi">Web developer in process</h3>
+                <h3 data-section="sobre-mi" id="title-sobreMi" class="title_sobre-mi">Web developer in process
+                </h3>
             </div>
             <div class="container_text_sobre-mi">
-                <p class="text_sobre-mi">my name is Pedro, i am a constantly growing web developer</p>
+                <p data-section="sobre-mi" id="text_sobreMi" class="text_sobre-mi">My knowledge is as follows, but I am
+                    constantly learning to improve myself every day.</p>
             </div>
         </div>
+        <div class="container_skills">
 
-        <div class="skills">
-            <div class="skills__item">
-                <p class="skills__tech">HTML</p>
-                <div class="skills__bar skills__bar--90"></div>
-            </div>
-            <div class="skills__item">
-                <p class="skills__tech">CSS</p>
-                <div class="skills__bar skills__bar--60"></div>
-            </div>
-            <div class="skills__item">
-                <p class="skills__tech">SASS</p>
-                <div class="skills__bar skills__bar--10"></div>
-            </div>
-            <div class="skills__item">
-                <p class="skills__tech">JS</p>
-                <div class="skills__bar skills__bar--10"></div>
+            <div class="skills">
+                <div class="skills__item">
+                    <p class="skills__tech">HTML</p>
+                    <div class="skills__bar skills__bar--90"></div>
+                </div>
+                <div class="skills__item">
+                    <p class="skills__tech">CSS</p>
+                    <div class="skills__bar skills__bar--60"></div>
+                </div>
+                <div class="skills__item">
+                    <p class="skills__tech">SASS</p>
+                    <div class="skills__bar skills__bar--10"></div>
+                </div>
+                <div class="skills__item">
+                    <p class="skills__tech">JS</p>
+                    <div class="skills__bar skills__bar--10"></div>
+                </div>
             </div>
         </div>
-
-
+        </div>
     </section>
-
     <section id="proyectos" class="secciones container">
         <div class="container_proyectos">
             <div class="linea-proyectos">
-        <h2 class="proyectos">Projects</h2>
-    </div>
-    <p class="parrafo-proyectos">coming soon...</p>
-    </div>
+                <h2 data-section="proyectos" id="h2-proyectos" class="proyectos">Projects</h2>
+            </div>
+            <p data-section="proyectos" id="parrafoProyectos" class="parrafo-proyectos">coming soon...</p>
+        </div>
 
     </section>
 
 
     <section id="contacto" class="secciones container">
         <div class="title_container">
-            <h2 class="title_contact">Contact with me</h2>
+            <h2 data-section="contacto" id="title_contacto" class="title_contact">Contact with me</h2>
         </div>
         <div class="container_general_contact">
             <ul class="contact_ul_container">
@@ -181,31 +188,39 @@
                 </li>
             </ul>
 
-            <form class="form_container">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input class="input_style" type="text" name="name" id="name" placeholder="Name">
-                <textarea class="input_style" name="message" id="message" placeholder="Message" cols="30"
+            <form id="form" action="https://formspree.io/f/mwkyrven" method="POST" class="form_container">
+                <input for="email" type="email" name="email" id="email" placeholder="Email">
+                <input class="input_style" type="text" for="name" name="name" id="name" placeholder="Name">
+                <textarea class="input_style" for="message" name="message" id="message" placeholder="Message" cols="30"
                     rows="10"></textarea>
+                <button data-section="contacto" id="boton-enviar" class="button_resume" type="submit">Send</button>
             </form>
 
     </section>
 
+    <div class="container-social">
+        <div class="social">
+            <ul>
+                <li><a href="https://github.com/PedroGervasoni">GitHub <i class="fa fa-github"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?text=.. &phone=5493413923240">Whatsapp <i
+                            class="fa fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/pedrogervasoni/">Instagram <i class="fa fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/pedro-gervasoni-37aa4118a">linkedin <i
+                            class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
 
-    <div class="social">
-    <ul>
-        <li><a href="https://github.com/PedroGervasoni">GitHub <i class="fa fa-github"></i></a></li>
-        <li><a href="https://api.whatsapp.com/send?text=.. &phone=5493413923240">Whatsapp <i class="fa fa-whatsapp"></i></a></li>
-        <li><a href="https://www.instagram.com/pedrogervasoni/">Instagram <i class="fa fa-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/pedro-gervasoni-37aa4118a">linkedin <i class="fa fa-linkedin"></i></a></li>
-    </ul>
-</div>
-
+    <footer>
+        <p class="Copyright">©Copyright by Pedro Gervasoni</p>
+    </footer>
 
 
 
     <button id="btnScrollToTop">
         <i class="uil uil-arrow-up"></i>
-        <span class="text_up">Scroll Up</span>
+        <span data-section="scroll-up" id="UP" class="text_up">Scroll Up</span>
     </button>
 
 
@@ -272,6 +287,28 @@
     <script src="https://use.fontawesome.com/7bf522eb3c.js"></script>
     <script src="/js/particles.min.js"></script>
     <script src="/js/particlesjs-config.json"></script>
+    <script src="/js/app.js"></script>
+    <script>
+        const $form = document.querySelector('#form')
+
+$form.addEventListener('submit', handleSumbit);
+
+async function handleSumbit(event) {
+  event.prevetDefault()
+  const form = new FormData(this)
+  const response = await fetch(this.action,{
+    method: this.method,
+    body: form,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  if (response.ok){
+    this.reset()
+    alert('Gracias por contarme...')
+  }
+}
+    </script>
 
 </body>
 

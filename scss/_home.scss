@@ -40,6 +40,10 @@
 
 .container_button{
  padding: 20px;
+ display: flex;
+}
+.container_button_2{
+  margin-left: 10px;
 }
 .button_resume{
   background-color:$color-lima-claro;

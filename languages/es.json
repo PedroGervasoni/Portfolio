@@ -1,0 +1,32 @@
+ 
+
+{
+  "navbar": {
+    "sobre-mi": "Sobre Mi",
+    "proyectos" : "Proyectos",
+    "contacto": "Contacto"
+  },
+  "home": {
+    "title-home": "Yo soy Pedro Gervasoni",
+    "text-home": "Futuro full stack desarrollador",
+    "span-home": "Te invito a conocerme...",
+    "boton-resume": "Curriculum",
+    "boton-contacto": "Contacto"
+  },
+  "sobre-mi":{
+    "sobreMi": "Sobre Mi",
+    "title-sobreMi": "Web developer in process",
+    "text_sobreMi": "my name is Pedro, i am a constantly growing web developer"
+  },
+  "proyectos": {
+    "h2-proyectos": "Proyectos",
+    "parrafoProyectos": "coming soon..."
+  },
+  "contacto": {
+    "title_contacto": "Contacta conmigo",
+    "boton-enviar" : "enviar"
+  },
+  "scroll-up":{
+    "UP": "Hacia arriba"
+  }
+}

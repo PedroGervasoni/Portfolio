@@ -36,6 +36,11 @@
 
 .container_button {
   padding: 20px;
+  display: flex;
+}
+
+.container_button_2 {
+  margin-left: 10px;
 }
 
 .button_resume {
@@ -92,11 +97,18 @@
   letter-spacing: 1px;
 }
 
+.container_skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 .skills {
   background: #1C1D21;
   border-radius: 0.4em;
   padding: 20px;
-  margin-top: 50px;
 }
 
 .skills__tech {
@@ -389,7 +401,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .header {
-  background-color: #0769e900;
+  background-color: rgba(7, 105, 233, 0);
   height: 100px;
   display: flex;
   align-items: center;
@@ -640,7 +652,7 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: 5;
   text-transform: uppercase;
   text-align: center;
-  background: white;
+  background: #a7a7a7;
   transform: translate3d(0, 0, 0);
 }
 .can-toggle input[type=checkbox][disabled] ~ label {
@@ -825,7 +837,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: #686c7e;
 }
 .can-toggle.demo-rebrand-2 label .can-toggle__switch:before {
-  color: rgba(255, 255, 255, 0.7);
+  color: #0e0e0e;
 }
 .can-toggle.demo-rebrand-2 label .can-toggle__switch:after {
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
@@ -870,7 +882,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .social {
   position: fixed;
-  top: 420px;
+  bottom: 17rem;
 }
 
 .social ul {
@@ -939,6 +951,12 @@ body::-webkit-scrollbar-thumb:hover {
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
+}
+
+.Copyright {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

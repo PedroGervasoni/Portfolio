@@ -488,7 +488,7 @@ body::-webkit-scrollbar-thumb:hover {
         z-index: 5;
         text-transform: uppercase;
         text-align: center;
-        background: white;
+        background: #a7a7a7;
         transform: translate3d(0,0,0);
       }
 
@@ -535,7 +535,7 @@ body::-webkit-scrollbar-thumb:hover {
     (
       $headings-color,  // Off state color
       $color-lima-claro,  // On state color
-      rgba(white, 0.7),  // Off state text color
+      #0e0e0e,  // Off state text color
       cubic-bezier(0.860, 0.000, 0.070, 1.000)  // Transition timing function
     );
     @include can-toggle-appearance
@@ -556,7 +556,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .social {
   position: fixed;
-  top: 420px;
+  bottom: 17rem;
 }
 .social ul {
   
@@ -622,4 +622,8 @@ body::-webkit-scrollbar-thumb:hover {
   transform: rotate(0deg);
 }
 
-
+.Copyright{
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
