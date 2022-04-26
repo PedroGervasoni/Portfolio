@@ -58,15 +58,16 @@
             </button>
             <ul class="nav-menu">
                 <li class="nav-menu-item">
-                    <a href="#sobre-mi" data-section="navbar" id="sobre-mi" class="nav-menu-link nav-link">About
+                    <a href="#sobre-mi" data-section="navbar" id="nav-sobre-mi" class="nav-menu-link nav-link">About
                         Me</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#proyectos" data-section="navbar" id="proyectos"
+                    <a href="#proyectos" data-section="navbar" id="nav-proyectos"
                         class="nav-menu-link nav-link">Projects</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#contacto" data-section="navbar" id="contacto" class="nav-menu-link nav-link">Contact</a>
+                    <a href="#contacto" data-section="navbar" id="nav-contacto"
+                        class="nav-menu-link nav-link">Contact</a>
                 </li>
                 <li class="nav-menu-item">
                     <div class="can-toggle demo-rebrand-2 ">
@@ -77,8 +78,20 @@
                     </div>
 
                 </li>
+                <div class="nav-container-social">
+                    <div class="nav-social">
+                        <ul class="nav-social-ul">
+                            <li><a class="nav-social-icon" href="https://github.com/PedroGervasoni"><i class="fa fa-github"></i></a></li>
+                            <li><a class="nav-social-icon" href="https://api.whatsapp.com/send?text=.. &phone=5493413923240"><i
+                                        class="fa fa-whatsapp"></i></a></li>
+                            <li><a class="nav-social-icon" href="https://www.instagram.com/pedrogervasoni/"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a class="nav-social-icon" href="https://www.linkedin.com/in/pedro-gervasoni-37aa4118a"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </ul>
-
         </nav>
     </header>
 
@@ -150,8 +163,21 @@
             <div class="linea-proyectos">
                 <h2 data-section="proyectos" id="h2-proyectos" class="proyectos">Projects</h2>
             </div>
-            <p data-section="proyectos" id="parrafoProyectos" class="parrafo-proyectos">coming soon...</p>
+            <p data-section="proyectos" id="parrafoProyectos" class="parrafo-proyectos">my proyects</p>
         </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="container-general">
+                        <div class="gallery-wrap wrap-effect-1">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                </div>
 
     </section>
 
@@ -188,13 +214,15 @@
                 </li>
             </ul>
 
-            <form id="form" action="https://formspree.io/f/mwkyrven" method="POST" class="form_container">
+            <form id="my-form" action="https://formspree.io/f/xjvlpgzl" method="POST" class="form_container">
                 <input for="email" type="email" name="email" id="email" placeholder="Email">
                 <input class="input_style" type="text" for="name" name="name" id="name" placeholder="Name">
                 <textarea class="input_style" for="message" name="message" id="message" placeholder="Message" cols="30"
                     rows="10"></textarea>
-                <button data-section="contacto" id="boton-enviar" class="button_resume" type="submit">Send</button>
+                <button id="my-form-button" data-section="contacto" class="button_resume" type="submit">Send</button>
+                <p id="my-form-status"></p>
             </form>
+
 
     </section>
 
@@ -288,28 +316,8 @@
     <script src="/js/particles.min.js"></script>
     <script src="/js/particlesjs-config.json"></script>
     <script src="/js/app.js"></script>
-    <script>
-        const $form = document.querySelector('#form')
-
-$form.addEventListener('submit', handleSumbit);
-
-async function handleSumbit(event) {
-  event.prevetDefault()
-  const form = new FormData(this)
-  const response = await fetch(this.action,{
-    method: this.method,
-    body: form,
-    headers: {
-      'Accept': 'application/json'
-    }
-  })
-  if (response.ok){
-    this.reset()
-    alert('Gracias por contarme...')
-  }
-}
-    </script>
-
+    <script src="/js/send-form.js"></script>
+    <script src="/js/proyect-galley.js"></script>
 </body>
 
 </html>
